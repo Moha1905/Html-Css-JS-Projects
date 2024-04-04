@@ -11,18 +11,23 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Sound Board</title>
+    <title>Auto Text Effect</title>
   </head>
   <body>
-    <audio id="applause" src="Sounds/applause.wav"></audio>
-    <audio id="boo" src="Sounds/boo.wav"></audio>
-    <audio id="gasp" src="Sounds/gasp.wav"></audio>
-    <audio id="tada" src="Sounds/tada.wav"></audio>
-    <audio id="victory" src="Sounds/victory.mp3"></audio>
-    <audio id="wrong" src="Sounds/wrong.mp3"></audio>
+    <h1 id="text">Starting...</h1>
 
-    <div id="buttons"></div>
-
+    <div>
+      <label for="speed">Speed:</label>
+      <input
+        type="number"
+        name="speed"
+        id="speed"
+        value="1"
+        min="1"
+        max="5"
+        step="1"
+      />
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
